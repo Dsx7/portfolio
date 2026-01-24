@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# ⚡ My Developer Portfolio
 
-First, run the development server:
+![Project Banner](https://i.ibb.co.com/QFWvHWcC/screencapture-portfolio-beta-one-bi79ovtfs4-vercel-app-2026-01-24-19-10-52.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![View Live Site](https://img.shields.io/badge/View_Live_Site-Visit_Now-fbbf24?style=for-the-badge&logo=vercel&logoColor=020617)](https://portfolio-beta-one-bi79ovtfs4.vercel.app)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[![Next.js](https://img.shields.io/badge/Next.js_16-0f172a?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React_19-0f172a?style=for-the-badge&logo=react&logoColor=22d3ee)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0f172a?style=for-the-badge&logo=tailwind-css&logoColor=22d3ee)](https://tailwindcss.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<br />
 
-## Learn More
+A modern, responsive developer portfolio built with **Next.js 16**, **React 19**, and **Tailwind CSS**. <br />
+It features smooth animations, dark mode support, and a clean design using a custom **Deep Dark / Amber** color palette.
 
-To learn more about Next.js, take a look at the following resources:
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+- **⚡ Fast & Modern:** Built with the latest **Next.js 16** & **React 19**.
+- **🎨 Stylish UI:** Styled using **Tailwind CSS** with a custom `tailwind.config.ts`.
+- **mj Dark Mode:** Seamless dark/light mode toggle.
+- **✨ Smooth Animations:** Powered by `framer-motion` for page transitions.
+- **⌨️ Typing Effects:** Dynamic text presentation with `typewriter-effect`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Core | Styling | Animation |
+| :---: | :---: | :---: |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) | ![Tailwind](https://img.shields.io/badge/Tailwind-0f172a?style=flat-square&logo=tailwind-css&logoColor=22d3ee) | ![Framer](https://img.shields.io/badge/Framer_Motion-0f172a?style=flat-square&logo=framer&logoColor=white) |
+| ![React](https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=22d3ee) | ![Icons](https://img.shields.io/badge/React_Icons-0f172a?style=flat-square&logo=react&logoColor=fbbf24) | ![Typewriter](https://img.shields.io/badge/Typewriter-0f172a?style=flat-square&logo=javascript&logoColor=fbbf24) |
+
+</div>
+
+<br />
+
+## Made with ❤️ by Dsx7
+
+## 🏃‍♂️ Getting Started Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Dsx7/portfolio.git](https://github.com/Dsx7/portfolio.git)
+   cd portfolio
+
