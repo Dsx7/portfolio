@@ -6,13 +6,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 // --- METADATA CONFIGURATION ---
 export const metadata = {
-  metadataBase: new URL('https://litan-molla.com'), // Replace with your actual domain later
+  metadataBase: new URL('https://portfolio-beta-one-bi79ovtfs4.vercel.app'), 
   title: "Al Helal Bayijid | MERN Stack Developer",
   description: "Al Helal Mohammod Bayijid is a MERN Stack Developer specializing in React, Tailwind CSS, and modern web application development.",
   
   // Canonical Link
   alternates: {
-    canonical: 'https://litan-molla.com/',
+    canonical: 'https://portfolio-beta-one-bi79ovtfs4.vercel.app',
   },
 
   // Favicon
@@ -23,13 +23,13 @@ export const metadata = {
   // Open Graph (Facebook/LinkedIn)
   openGraph: {
     type: 'website',
-    url: 'https://litan-molla.com/',
+    url: 'https://portfolio-beta-one-bi79ovtfs4.vercel.app',
     title: "Al Helal Bayijid | MERN Stack Developer",
     description: "MERN Stack Developer specializing in React and modern web development.",
     siteName: "Al Helal Bayijid Portfolio",
     images: [
       {
-        url: '/og.webp', // Make sure you add og.webp to your public folder
+        url: '/bg.webp', 
         width: 1200,
         height: 630,
         type: 'image/webp',
@@ -43,7 +43,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "Al Helal Bayijid | MERN Stack Developer",
     description: "MERN Stack Developer specializing in React and modern web development.",
-    images: ['/og.webp'],
+    images: ['/bg.webp'],
   },
 };
 

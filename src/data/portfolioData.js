@@ -98,6 +98,37 @@ export const portfolioData = {
         },
         {
             id: "3",
+            name: "BhootCam - The Ultimate Paranormal Streaming Platform",
+            image: "https://i.ibb.co.com/1c8R3FP/Screenshot-2026-01-27-161833.png",
+            shortDesc: "A full-stack MERN streaming platform designed as a cinematic digital library for paranormal audio stories, featuring a Netflix-style UI and robust content management.",
+
+            fullDesc: "BhootCam is a modern, immersive web application built to transform how horror enthusiasts access audio content. Moving away from traditional static file lists, this project utilizes the MERN stack (MongoDB, Express, React, Node.js) to deliver a responsive, app-like experience. The platform features server-side pagination for scalability, Firebase authentication for security, and complex MongoDB aggregation pipelines to power an analytical admin dashboard. The frontend is crafted with Tailwind CSS to ensure a high-performance, visually stunning interface with glassmorphism effects and skeleton loading states.",
+
+            features: [
+                "Cinematic UI/UX: A fully responsive interface featuring a dynamic hero slider, horizontal trending scrolls, and glassmorphism design elements.",
+                "Optimized Performance: Implements server-side pagination, skeleton loaders, and efficient API queries to handle thousands of episodes without lag.",
+                "Role-Based Access Control (RBAC): Secure authentication via Firebase with custom middleware to separate 'Admin' privileges (CRUD, Analytics) from 'User' features (Wishlist).",
+                "Admin Dashboard & Analytics: Real-time visualization of platform data, including total views and category distribution using MongoDB aggregation pipelines.",
+                "Advanced Search & Filtering: A robust search engine that allows users to filter by category, search by keywords, and sorts results by date automatically."
+            ],
+            stack: [
+                "React.js",
+                "Tailwind CSS",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Firebase Auth",
+                "Vercel"
+            ],
+            liveLink: "https://bhoot-cam.vercel.app/",
+            repoLink: "https://github.com/Dsx7/Bhoot.cam",
+            // --- NEW FIELDS REQUIRED ---
+            challenges: "One significant challenge was managing data consistency and sorting for the archive. Initially, dates stored as strings caused incorrect chronological ordering in the 'Latest Episodes' section. I resolved this by enforcing strict type casting in the backend to ensure all dates are stored as BSON Date objects, enabling precise sorting. Additionally, I optimized the API payload size by refactoring the 'Explore' page from client-side slicing to server-side limit/skip pagination, significantly reducing initial load time.",
+
+            futurePlans: "I plan to implement a user comment and rating system to foster community interaction. Additionally, I aim to convert the application into a Progressive Web App (PWA) to allow for offline listening and background playback on mobile devices."
+        },
+        {
+            id: "4",
             name: "Photo Card Generator",
             image: "https://i.ibb.co.com/SXyMRpk2/pcg.png",
             shortDesc: "A web-based tool to generate viral, professional news-style photo cards instantly from your browser.",
