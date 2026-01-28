@@ -2,7 +2,7 @@ export const portfolioData = {
     personal: {
         name: "Al Helal Mohammod Bayijid",
         photo: "/hero.webp",
-        resumeUrl: "",
+        resumeUrl: "https://drive.google.com/file/d/1_ZwvdCgBUxXwkEHiEiitkhR6EMi0xbFk/view?usp=sharing",
         email: "thebayijid@gmail.com",
         phone: "+8801798116848",
         social: {
@@ -121,6 +121,7 @@ export const portfolioData = {
                 "Vercel"
             ],
             liveLink: "https://bhoot-cam.vercel.app/",
+            liveLink1: "https://bhoot-cam-next.vercel.app/",
             repoLink: "https://github.com/Dsx7/Bhoot.cam",
             // --- NEW FIELDS REQUIRED ---
             challenges: "One significant challenge was managing data consistency and sorting for the archive. Initially, dates stored as strings caused incorrect chronological ordering in the 'Latest Episodes' section. I resolved this by enforcing strict type casting in the backend to ensure all dates are stored as BSON Date objects, enabling precise sorting. Additionally, I optimized the API payload size by refactoring the 'Explore' page from client-side slicing to server-side limit/skip pagination, significantly reducing initial load time.",

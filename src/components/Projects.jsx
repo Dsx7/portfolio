@@ -81,9 +81,32 @@ export default function Projects() {
                   </Link>
 
                   {/* 2. Live Button (Yellow) */}
-                  <a href={project.liveLink} target="_blank" className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20">
-                    <FaExternalLinkAlt size={14}/> Live
-                  </a>
+                  {/* Live Buttons Container */}
+<div className="flex gap-4">
+  {/* First Live Button */}
+  {project.liveLink && (
+    <a 
+      href={project.liveLink} 
+      target="_blank" 
+      rel="noreferrer"
+      className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
+    >
+      <FaExternalLinkAlt size={14}/> Live
+    </a>
+  )}
+
+  {/* Second Live Button */}
+  {project.liveLink1 && (
+    <a 
+      href={project.liveLink1} 
+      target="_blank" 
+      rel="noreferrer"
+      className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
+    >
+      <FaExternalLinkAlt size={14}/> Live 2
+    </a>
+  )}
+</div>
 
                   {/* 3. GitHub Button (Outline) */}
                   <a href={project.repoLink} target="_blank" className="flex items-center gap-2 bg-transparent border border-white/20 text-white px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:border-primary hover:text-primary transition-all transform hover:-translate-y-1">

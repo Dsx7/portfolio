@@ -92,7 +92,7 @@ export default function Navbar() {
           })}
           
           {/* Resume Button (Optional in Navbar) */}
-          <a href="" download className="px-5 py-2 text-sm font-bold text-black bg-primary rounded-full hover:bg-yellow-400 transition-transform hover:scale-105 shadow-lg shadow-primary/20 ml-4">
+          <a href="https://drive.google.com/file/d/1_ZwvdCgBUxXwkEHiEiitkhR6EMi0xbFk/view?usp=sharing" download className="px-5 py-2 text-sm font-bold text-black bg-primary rounded-full hover:bg-yellow-400 transition-transform hover:scale-105 shadow-lg shadow-primary/20 ml-4">
             Resume
           </a>
         </div>
@@ -145,7 +145,7 @@ export default function Navbar() {
               transition={{ delay: 0.5 }}
               className="mt-12"
             >
-               <a href="#" download className="px-8 py-3 text-lg font-bold text-black bg-primary rounded-full shadow-xl">
+               <a href="https://drive.google.com/file/d/1_ZwvdCgBUxXwkEHiEiitkhR6EMi0xbFk/view?usp=sharing" download className="px-8 py-3 text-lg font-bold text-black bg-primary rounded-full shadow-xl">
                  Download Resume
                </a>
             </motion.div>
