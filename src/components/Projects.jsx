@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link'; // Import Link
+import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt, FaCheck, FaInfoCircle } from 'react-icons/fa';
 import { portfolioData } from '@/data/portfolioData';
 import { motion } from 'framer-motion';
@@ -33,15 +33,19 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`flex flex-col md:flex-row items-stretch bg-[#080E22] border border-white/5 rounded-[2rem] overflow-hidden shadow-xl hover:shadow-secondary/5 transition-shadow duration-500 group ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
+                // CHANGED: Removed 'items-stretch' and added 'items-center' to prevent image stretching
+                className={`flex flex-col md:flex-row items-center bg-[#080E22] border border-white/5 rounded-[2rem] overflow-hidden shadow-xl hover:shadow-secondary/5 transition-shadow duration-500 group ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
             >
               
-              <div className="w-full md:w-[55%] relative overflow-hidden h-[250px] md:h-auto">
-                 <div className="absolute inset-0 bg-[#020618]/20 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              {/* Image Container */}
+              <div className="w-full md:w-[55%] relative overflow-hidden h-[250px] md:h-[400px]"> 
+                 <div className="absolute inset-0 bg-[#020618]/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                  <img 
                     src={project.image} 
                     alt={project.name} 
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                    // CHANGED: 'object-cover' to 'object-contain' to show full image
+                    // CHANGED: 'object-top' to 'object-center' for better focus
+                    className="w-full h-full object-contain object-center transition-transform duration-700 group-hover:scale-105" 
                  />
               </div>
 
@@ -54,7 +58,7 @@ export default function Projects() {
                 </p>
 
                 <ul className="mb-8 space-y-2">
-                  {project.features && project.features.slice(0, 3).map((feature, i) => ( // Showing only top 3 features here
+                  {project.features && project.features.slice(0, 3).map((feature, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
                       <span className="mt-1 text-secondary"><FaCheck size={14} /></span>
                       {feature}
@@ -72,7 +76,6 @@ export default function Projects() {
 
                 {/* --- BUTTONS --- */}
                 <div className="flex flex-wrap gap-4">
-                   {/* 1. View Details Button (Cyan) */}
                   <Link 
                     href={`/projects/${project.id}`}
                     className="flex items-center gap-2 bg-secondary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-cyan-300 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-secondary/20"
@@ -80,35 +83,30 @@ export default function Projects() {
                     <FaInfoCircle size={14}/> Details
                   </Link>
 
-                  {/* 2. Live Button (Yellow) */}
-                  {/* Live Buttons Container */}
-<div className="flex gap-4">
-  {/* First Live Button */}
-  {project.liveLink && (
-    <a 
-      href={project.liveLink} 
-      target="_blank" 
-      rel="noreferrer"
-      className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
-    >
-      <FaExternalLinkAlt size={14}/> Live
-    </a>
-  )}
+                  <div className="flex gap-4">
+                    {project.liveLink && (
+                      <a 
+                        href={project.liveLink} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
+                      >
+                        <FaExternalLinkAlt size={14}/> Live
+                      </a>
+                    )}
 
-  {/* Second Live Button */}
-  {project.liveLink1 && (
-    <a 
-      href={project.liveLink1} 
-      target="_blank" 
-      rel="noreferrer"
-      className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
-    >
-      <FaExternalLinkAlt size={14}/> Live 2
-    </a>
-  )}
-</div>
+                    {project.liveLink1 && (
+                      <a 
+                        href={project.liveLink1} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="flex items-center gap-2 bg-primary text-black px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary/20"
+                      >
+                        <FaExternalLinkAlt size={14}/> Live 2
+                      </a>
+                    )}
+                  </div>
 
-                  {/* 3. GitHub Button (Outline) */}
                   <a href={project.repoLink} target="_blank" className="flex items-center gap-2 bg-transparent border border-white/20 text-white px-6 py-2.5 rounded-xl font-bold text-sm md:text-base hover:border-primary hover:text-primary transition-all transform hover:-translate-y-1">
                     <FaGithub size={18}/> Code
                   </a>

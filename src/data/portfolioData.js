@@ -99,7 +99,7 @@ export const portfolioData = {
         {
             id: "3",
             name: "BhootCam - The Ultimate Paranormal Streaming Platform",
-            image: "https://i.ibb.co.com/1c8R3FP/Screenshot-2026-01-27-161833.png",
+            image: "https://i.ibb.co.com/bM7hQqjg/next-js.png",
             shortDesc: "A full-stack MERN streaming platform designed as a cinematic digital library for paranormal audio stories, featuring a Netflix-style UI and robust content management.",
 
             fullDesc: "BhootCam is a modern, immersive web application built to transform how horror enthusiasts access audio content. Moving away from traditional static file lists, this project utilizes the MERN stack (MongoDB, Express, React, Node.js) to deliver a responsive, app-like experience. The platform features server-side pagination for scalability, Firebase authentication for security, and complex MongoDB aggregation pipelines to power an analytical admin dashboard. The frontend is crafted with Tailwind CSS to ensure a high-performance, visually stunning interface with glassmorphism effects and skeleton loading states.",
@@ -113,6 +113,7 @@ export const portfolioData = {
             ],
             stack: [
                 "React.js",
+                "Next.js",
                 "Tailwind CSS",
                 "Node.js",
                 "Express.js",
@@ -120,9 +121,8 @@ export const portfolioData = {
                 "Firebase Auth",
                 "Vercel"
             ],
-            liveLink: "https://bhoot-cam.vercel.app/",
-            liveLink1: "https://bhoot-cam-next.vercel.app/",
-            repoLink: "https://github.com/Dsx7/Bhoot.cam",
+            liveLink: "https://bhoot-cam-next.vercel.app",
+            repoLink: "https://github.com/Dsx7/Bhoot.cam-next",
             // --- NEW FIELDS REQUIRED ---
             challenges: "One significant challenge was managing data consistency and sorting for the archive. Initially, dates stored as strings caused incorrect chronological ordering in the 'Latest Episodes' section. I resolved this by enforcing strict type casting in the backend to ensure all dates are stored as BSON Date objects, enabling precise sorting. Additionally, I optimized the API payload size by refactoring the 'Explore' page from client-side slicing to server-side limit/skip pagination, significantly reducing initial load time.",
 
