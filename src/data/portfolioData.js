@@ -99,7 +99,7 @@ export const portfolioData = {
         {
             id: "3",
             name: "BhootCam - The Ultimate Paranormal Streaming Platform",
-            image: "https://i.ibb.co.com/bM7hQqjg/next-js.png",
+            image: "https://i.ibb.co.com/VYWMTTRw/next.webp",
             shortDesc: "A full-stack MERN streaming platform designed as a cinematic digital library for paranormal audio stories, featuring a Netflix-style UI and robust content management.",
 
             fullDesc: "BhootCam is a modern, immersive web application built to transform how horror enthusiasts access audio content. Moving away from traditional static file lists, this project utilizes the MERN stack (MongoDB, Express, React, Node.js) to deliver a responsive, app-like experience. The platform features server-side pagination for scalability, Firebase authentication for security, and complex MongoDB aggregation pipelines to power an analytical admin dashboard. The frontend is crafted with Tailwind CSS to ensure a high-performance, visually stunning interface with glassmorphism effects and skeleton loading states.",
