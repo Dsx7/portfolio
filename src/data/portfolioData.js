@@ -2,7 +2,7 @@ export const portfolioData = {
     personal: {
         name: "Al Helal Mohammod Bayijid",
         photo: "/hero.webp",
-        resumeUrl: "https://drive.google.com/file/d/1_ZwvdCgBUxXwkEHiEiitkhR6EMi0xbFk/view?usp=sharing",
+        resumeUrl: "https://drive.google.com/file/d/1I5CQ_ONY80iOr_d8vuFRpKUKKQRFv7CF/view?usp=drive_link",
         email: "thebayijid@gmail.com",
         phone: "+8801798116848",
         social: {
