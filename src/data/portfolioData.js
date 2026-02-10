@@ -27,7 +27,7 @@ export const portfolioData = {
     education: [{
             degree: "Complete Web Development",
             institution: "Programming Hero",
-            year: "2025 June to Until Now",
+            year: "2025 June to February 2026",
             details: "Learn Web Development."
         },
         {
