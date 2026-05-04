@@ -71,7 +71,7 @@ export const portfolioData = {
             ],
             stack: ["Next.js", "React", "Tailwind CSS", "Socket.io", "React Query", "NextAuth"],
             liveLink: "https://zyplo-six.vercel.app/",
-            repoLink: "", // Update this with the actual Zyplo repo link
+            repoLink: "https://github.com/Dsx7/Zyplo", 
             challenges: "Integrating real-time, bi-directional communication using Socket.io within a Next.js environment presented significant challenges. Ensuring that task updates and new AI-generated backlogs synchronized instantly across all connected clients required careful state management and cache invalidation with React Query.",
             futurePlans: "Future plans include enhancing the AI Kickstart feature to offer more personalized task generation based on specific industry templates (e.g., Agile software development, marketing campaigns). I also aim to implement deeper third-party integrations, such as syncing with Slack and GitHub."
         },
