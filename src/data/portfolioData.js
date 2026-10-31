@@ -24,7 +24,15 @@ export const portfolioData = {
     },
     // -----------------------------------------------------
 
-    education: [{
+    education: [
+        {
+            degree: "AI Skill Development Course B-01",
+            institution: "DYD - Department of Youth Development",
+            year: "02 Aug 2026 - 31 Sept 2026",
+            details: "Basic AI, Advance, Daily Office."
+        },
+
+        {
             degree: "Complete Web Development",
             institution: "Programming Hero",
             year: "2025 June to February 2026",
@@ -71,7 +79,7 @@ export const portfolioData = {
             ],
             stack: ["Next.js", "React", "Tailwind CSS", "Socket.io", "React Query", "NextAuth"],
             liveLink: "https://zyplo-six.vercel.app/",
-            repoLink: "https://github.com/Dsx7/Zyplo", 
+            repoLink: "https://github.com/Dsx7/Zyplo",
             challenges: "Integrating real-time, bi-directional communication using Socket.io within a Next.js environment presented significant challenges. Ensuring that task updates and new AI-generated backlogs synchronized instantly across all connected clients required careful state management and cache invalidation with React Query.",
             futurePlans: "Future plans include enhancing the AI Kickstart feature to offer more personalized task generation based on specific industry templates (e.g., Agile software development, marketing campaigns). I also aim to implement deeper third-party integrations, such as syncing with Slack and GitHub."
         },
@@ -114,6 +122,24 @@ export const portfolioData = {
         },
         {
             id: "4",
+            name: "SBKC - Education Website",
+            image: "https://image-host-axg.pages.dev/i/EzvpguVI.jpg",
+            shortDesc: "A Education Official Website design, Simple Functional and fast",
+            fullDesc: "-----;",
+            features: [
+                "Static, Responsive Landing Page: A modern front-end built with NextJS and Tailwind CSS, showcasing the platform's intended value proposition.",
+                "Comprehensive Project Blueprint: A Website that cover multiple education Classifications.",
+                "A Fully Backend based website, on NextJs.",
+                "Management Systems: Secure Admin Panel for data management using MongoDB."
+            ],
+            stack: ["NextJs", "Tailwind", "MongoDB", "Node.js"],
+            liveLink: "https://edu-front-eta.vercel.app/",
+            repoLink: "",
+            challenges: "I Just try to make a clone of a website, that i feels it can be awesome.",
+            futurePlans: ""
+        },
+        {
+            id: "5",
             name: "BhootCam - The Ultimate Paranormal Streaming Platform",
             image: "https://i.ibb.co.com/6pVY2jX/dsx-converted-image.jpg",
             shortDesc: "A full-stack MERN streaming platform designed as a cinematic digital library for paranormal audio stories, featuring a Netflix-style UI and robust content management.",
@@ -142,7 +168,7 @@ export const portfolioData = {
             futurePlans: "I plan to implement a user comment and rating system to foster community interaction. Additionally, I aim to convert the application into a Progressive Web App (PWA) to allow for offline listening and background playback on mobile devices."
         },
         {
-            id: "5",
+            id: "6",
             name: "Photo Card Generator",
             image: "https://i.ibb.co.com/SXyMRpk2/pcg.png",
             shortDesc: "A web-based tool to generate viral, professional news-style photo cards instantly from your browser.",
